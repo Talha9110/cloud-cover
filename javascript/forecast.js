@@ -1,23 +1,21 @@
-const apiKey = "SMcB2A7UQUoAEeU503VMVUKxzx4zLRSH";
+const apiKey = "Y6fLm0cgSr8dSI43uv5xrTOuR8AAxj1p";
 
 const getCityInfo = async (city) => {
-	const baseurl = "http://dataservice.accuweather.com/locations/v1/cities/search";
+	const baseUrl = "http://dataservice.accuweather.com/locations/v1/cities/search";
 	const query = `?apikey=${apiKey}&q=${city}`;
-	const cityInfo = await fetch(baseurl + query);
+	const cityInfo = await fetch(baseUrl + query);
 	const data = await cityInfo.json();
-	// console.log(data);
 	return data[0];
 };
 
-getCityInfo("Lahore");
+getCityInfo();
 
 const getWeather = async (id) => {
-	const baseurl = "http://dataservice.accuweather.com/currentconditions/v1/";
+	const baseUrl = "http://dataservice.accuweather.com/currentconditions/v1/";
 	const query = `${id}?apikey=${apiKey}`;
-	const weather = await fetch(baseurl + query);
+	const weather = await fetch(baseUrl + query);
 	const data = await weather.json();
-	// console.log(data);
 	return data[0];
 };
 
-getWeather("260622");
+getWeather();

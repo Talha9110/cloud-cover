@@ -1,5 +1,9 @@
 body {
-	background-color: #eeedec;
+	background: url(./images/4.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
 }
 
 .container {
@@ -13,22 +17,22 @@ body {
 	background-color: white;
 	margin-top: -50px;
 }
-
+/* for icon bg color for night time */
 .d {
 	background-color: yellow;
 }
-
+/* for icon bg color at night */
 .n {
 	background-color: white;
 }
-
+/* for day time */
 .day {
 	background-color: yellow;
 	color: black;
 	font-weight: 700;
 	z-index: 100;
 }
-
+/* for night time */
 .night {
 	background-color: black;
 	color: white;

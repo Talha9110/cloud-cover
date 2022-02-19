@@ -24,11 +24,11 @@ const color = document.querySelector(".color");
 const weatherDiv = document.querySelector(".weather-icon");
 const updateUI = (data) => {
 	const { cityDetails, weather } = data;
+	let weatherRounded = Math.round(weather.Temperature.Metric.Value);
 	details.innerHTML = `
     <h5 class="my-5">${cityDetails.EnglishName} </h5>
     <div class"my-3">${weather.WeatherText}</div>
-
-    <div class="display-4 my-4">${weather.Temperature.Metric.Value}<span>&deg;C</span> </div>
+    <div class="display-4 my-4">${weatherRounded}<span>&deg;C</span> </div>
     `;
 	let timeSource = null;
 	if (weather.IsDayTime) {
