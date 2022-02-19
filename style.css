@@ -1,0 +1,37 @@
+body {
+	background-color: #eeedec;
+}
+
+.container {
+	max-width: 400px;
+}
+
+.weather-icon {
+	position: relative;
+	border-radius: 50%;
+	width: 100px;
+	background-color: white;
+	margin-top: -50px;
+}
+
+.d {
+	background-color: yellow;
+}
+
+.n {
+	background-color: white;
+}
+
+.day {
+	background-color: yellow;
+	color: black;
+	font-weight: 700;
+	z-index: 100;
+}
+
+.night {
+	background-color: black;
+	color: white;
+	font-weight: 700;
+	z-index: 100;
+}
