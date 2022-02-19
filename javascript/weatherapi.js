@@ -41,6 +41,6 @@ const updateUI = (data) => {
 		weatherDiv.classList.add("n");
 	}
 	time.setAttribute("src", timeSource);
-	let iconSource = `images/icons/${weather.WeatherIcon}.svg`;
+	let iconSource = `./images/icons/${weather.WeatherIcon}.svg`;
 	icon.setAttribute("src", iconSource);
 };
