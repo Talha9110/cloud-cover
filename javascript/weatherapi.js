@@ -32,11 +32,11 @@ const updateUI = (data) => {
     `;
 	let timeSource = null;
 	if (weather.IsDayTime) {
-		timeSource = "images/day.svg";
+		timeSource = "./images/day.svg";
 		color.classList.add("day");
 		weatherDiv.classList.add("d");
 	} else {
-		timeSource = "images/night.svg";
+		timeSource = "./images/night.svg";
 		color.classList.add("night");
 		weatherDiv.classList.add("n");
 	}
